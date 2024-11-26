@@ -79,17 +79,10 @@ WSGI_APPLICATION = 'campaign_manager.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mydatabase_4etl',  # Database name
-        'USER': 'mydatabase_4etl_user',  # Database user
-        'PASSWORD': '9xgFvUHTvvUXzDIjUHHzkW7V2ifQG6yN',  # Database password
-        'HOST': 'dpg-ct2o54jtq21c73b5a69g-a.oregon-postgres.render.com',  # Replace with your External DB URL host (check Render dashboard)
-        'PORT': '5432',  # Default PostgreSQL port
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-
-
 
 
 # Password validation
